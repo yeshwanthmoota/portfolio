@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yeshwanth Mootakoduru — Linux / DevOps Engineer</title>
+<meta name="description" content="Yeshwanth Mootakoduru — Linux Systems & DevOps Engineer. Infrastructure as Code, CI/CD, Kubernetes, AWS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="scanline-overlay" aria-hidden="true"></div>
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <button type="button" class="nav-logo" id="profilePicTrigger" aria-haspopup="dialog"><img src="images/profile-pic.jpeg" alt="Open profile picture" class="nav-logo-img"></button>
+    <div class="nav-links">
+      <a href="#top"><span class="prompt">00.</span>home</a>
+      <a href="#about"><span class="prompt">01.</span>about</a>
+      <a href="#experience"><span class="prompt">02.</span>experience</a>
+      <a href="#skills"><span class="prompt">03.</span>stack</a>
+      <a href="#projects"><span class="prompt">04.</span>projects</a>
+      <a href="#contact"><span class="prompt">05.</span>contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- PROFILE PIC MODAL -->
+<div class="profile-modal" id="profileModal" role="dialog" aria-modal="true" aria-label="Profile picture" hidden>
+  <button type="button" class="profile-modal-close" id="profileModalClose" aria-label="Close">&times;</button>
+  <img src="images/profile-pic.jpeg" alt="Profile picture" class="profile-modal-img">
+</div>
+
+<!-- HERO -->
+<header id="top" class="hero">
+  <div class="hero-inner">
+    <div class="terminal-tag">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="terminal-tag-title">yesh — zsh — 80x24</span>
+    </div>
+    <p class="hero-kicker">$ whoami</p>
+    <h1 class="hero-title">
+      <span id="typewriter"></span><span class="cursor-blink">_</span>
+    </h1>
+    <p class="hero-sub">
+      Linux Systems &amp; DevOps Engineer building Infrastructure as Code, CI/CD pipelines,
+      and highly available systems across on-prem and multi-cloud fleets.
+    </p>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num" data-target="170" data-suffix="+">0</span>
+        <span class="stat-label">servers in fleet</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="99.9" data-decimal="1" data-suffix="%">0</span>
+        <span class="stat-label">uptime sustained</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="4" data-suffix="+">0</span>
+        <span class="stat-label">years in infra</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-target="5" data-suffix="+">0</span>
+        <span class="stat-label">services shipped via GitOps</span>
+      </div>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#experience" class="btn btn-primary">./view-experience.sh</a>
+      <a href="#contact" class="btn btn-ghost">$ get-in-touch</a>
+    </div>
+  </div>
+  <div class="scroll-hint"><span></span>scroll</div>
+</header>
+
+<main>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="section-inner">
+    <p class="section-eyebrow">$ cat about.md</p>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm a Linux Systems / DevOps Engineer with 4+ years of combined industry and
+          university experience keeping fleets of 50–170+ servers patched, hardened, and
+          highly available — on-prem and across AWS.
+        </p>
+        <p>
+          My day-to-day lives in Ansible playbooks, Terraform modules, GitLab CI/CD pipelines,
+          and Kubernetes manifests. I care about reproducibility — if a build works once, it
+          should work the same way every time, on every node, without anyone remembering a
+          manual step.
+        </p>
+        <p>
+          Most recently I've been provisioning AWS environments as reusable Terraform modules,
+          rolling out GitOps-based delivery with Argo CD, and hardening infrastructure against
+          STIG findings with Prometheus, Grafana, and the ELK stack.
+        </p>
+      </div>
+      <div class="about-meta">
+        <div class="meta-row"><span class="meta-key">location</span><span class="meta-val">Charlotte, NC</span></div>
+        <div class="meta-row"><span class="meta-key">role</span><span class="meta-val">Linux / DevOps Engineer</span></div>
+        <div class="meta-row"><span class="meta-key">education</span><span class="meta-val">M.S. Cybersecurity, UNC Charlotte — 3.8 GPA</span></div>
+        <div class="meta-row"><span class="meta-key">certs</span><span class="meta-val">AWS SAA · CompTIA Security+</span></div>
+        <div class="meta-row"><span class="meta-key">status</span><span class="meta-val"><span class="status-dot"></span>open to opportunities</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section section-alt">
+  <div class="section-inner">
+    <p class="section-eyebrow">$ git log --oneline --stat</p>
+    <div class="log">
+
+      <article class="log-entry">
+        <div class="log-rail"><span class="log-node"></span></div>
+        <div class="log-body">
+          <div class="log-head">
+            <h3>DevOps Engineer</h3>
+            <span class="log-date">Feb 2026 — Present</span>
+          </div>
+          <p class="log-org">Community Dreams Foundation · Remote, US</p>
+          <ul class="log-list">
+            <li>Cut new-environment deployment time from 2 days to 1 hour by provisioning AWS (VPC, Auto Scaling, ALB, S3, IAM, CloudWatch) as reusable Terraform modules for every new region.</li>
+            <li>Shipped continuous delivery for 5+ services via GitLab CI/CD and GitHub Actions with GitOps-based promotion, integrating Argo CD and HashiCorp Vault for automated secrets rotation.</li>
+            <li>Eliminated configuration drift across 170+ Linux servers with Ansible playbooks, deploying 5+ containerized microservices on Kubernetes via Helm with zero-downtime rolling updates.</li>
+            <li>Hardened AWS and on-prem infrastructure against STIG findings using Prometheus/Grafana and ELK, auditd, scoped IAM roles, and Splunk auth-log alerting.</li>
+          </ul>
+          <div class="log-tags">
+            <span>Terraform</span><span>AWS</span><span>Kubernetes</span><span>Argo CD</span><span>Vault</span><span>Ansible</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="log-entry">
+        <div class="log-rail"><span class="log-node"></span></div>
+        <div class="log-body">
+          <div class="log-head">
+            <h3>System Administrator</h3>
+            <span class="log-date">Feb 2024 — Dec 2025</span>
+          </div>
+          <p class="log-org">UNC Charlotte · Charlotte, NC</p>
+          <ul class="log-list">
+            <li>Administered 50+ RHEL/Ubuntu/Windows systems for 500+ faculty and students, owning the full LDAP/Active Directory account lifecycle — onboarding, RBAC, MFA, SSO troubleshooting.</li>
+            <li>Prevented outages before users noticed by building Prometheus/Grafana dashboards and ELK log aggregation surfacing disk-capacity, failed-service, and cert-expiry issues.</li>
+            <li>Automated monthly patch windows, log rotation, and nightly backups via Bash/cron for disaster recovery readiness.</li>
+            <li>Secured internal web apps behind Apache/Nginx reverse proxies with TLS termination and OAuth 2.0; provisioned KVM VMs from golden templates for course labs.</li>
+          </ul>
+          <div class="log-tags">
+            <span>RHEL</span><span>LDAP/AD</span><span>Prometheus</span><span>Grafana</span><span>ELK</span><span>KVM</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="log-entry">
+        <div class="log-rail"><span class="log-node"></span></div>
+        <div class="log-body">
+          <div class="log-head">
+            <h3>DevOps Engineer</h3>
+            <span class="log-date">Jan 2022 — Dec 2023</span>
+          </div>
+          <p class="log-org">Virtualize Technologies Pvt. Ltd. · Punjab, India</p>
+          <ul class="log-list">
+            <li>Sustained 99.9% uptime across 170+ Linux servers (KVM, VMware vSphere 7) hosting 60+ production VMs for live multiplayer game services, with on-call incident response during live-traffic events.</li>
+            <li>Reduced deployment time from 2 days to 1 hour designing latency-sensitive AWS game-server environments — VPCs, Auto Scaling, load balancing, IAM — codified as reusable Terraform modules.</li>
+            <li>Standardized fleet-wide configuration (SSH policy, NTP, monitoring agents, sysctl tuning) by replacing ad-hoc SSH changes with Ansible playbooks and roles.</li>
+            <li>Built GitLab CI/CD and GitHub Actions pipelines with GitOps promotion, Vault secrets, and Argo CD delivery under formal change management; tracked STIG remediation fleet-wide.</li>
+          </ul>
+          <div class="log-tags">
+            <span>VMware vSphere</span><span>Terraform</span><span>Ansible</span><span>GitLab CI/CD</span><span>Helm</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="section-inner">
+    <p class="section-eyebrow">$ cat /etc/stack.conf</p>
+    <div class="config-grid">
+
+      <div class="config-block">
+        <h3><span class="prompt">[</span>operating_systems<span class="prompt">]</span></h3>
+        <p>RHEL 7/8/9 · SUSE Linux · Rocky Linux · CentOS · Ubuntu · Windows Server</p>
+      </div>
+
+      <div class="config-block">
+        <h3><span class="prompt">[</span>cloud_and_devops<span class="prompt">]</span></h3>
+        <p>AWS (EC2, VPC, IAM, S3, CloudWatch, CloudFormation, Auto Scaling, ALB) · Docker · Kubernetes/Helm · Jenkins · GitLab CI/CD · GitHub Actions</p>
+      </div>
+
+      <div class="config-block">
+        <h3><span class="prompt">[</span>automation_and_iac<span class="prompt">]</span></h3>
+        <p>Ansible · Terraform · Bash · Python · YAML · Git/GitHub · GitOps · Argo CD</p>
+      </div>
+
+      <div class="config-block">
+        <h3><span class="prompt">[</span>secrets_and_iam<span class="prompt">]</span></h3>
+        <p>HashiCorp Vault · LDAP/OpenLDAP · SSO · OAuth 2.0 · MFA · RBAC · Active Directory</p>
+      </div>
+
+      <div class="config-block">
+        <h3><span class="prompt">[</span>monitoring_and_ops<span class="prompt">]</span></h3>
+        <p>Prometheus · Grafana · ELK Stack · Splunk · Nagios · CloudWatch · Incident Response · On-Call/SLA</p>
+      </div>
+
+      <div class="config-block">
+        <h3><span class="prompt">[</span>security<span class="prompt">]</span></h3>
+        <p>SELinux · STIG · OS Hardening · Patch Management · auditd · Vulnerability Management</p>
+      </div>
+
+      <div class="config-block">
+        <h3><span class="prompt">[</span>networking<span class="prompt">]</span></h3>
+        <p>TCP/IP · DNS · DHCP · VPN · SSH · iptables · firewalld · Apache · Nginx · Load Balancing</p>
+      </div>
+
+      <div class="config-block">
+        <h3><span class="prompt">[</span>virtualization<span class="prompt">]</span></h3>
+        <p>KVM · VMware vSphere 7 (ESXi, vCenter) · SAN/NAS · LVM · NFS/Samba</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section section-alt">
+  <div class="section-inner">
+    <p class="section-eyebrow">$ ls ~/projects</p>
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="project-head">
+          <span class="project-icon">◆</span>
+          <h3>Homelab: Cloud-Native Application Platform</h3>
+        </div>
+        <p class="project-stack">AWS · Kubernetes · Terraform · Argo CD</p>
+        <p class="project-desc">
+          Full stack provisioned via Terraform (VPC, subnets, IAM, EC2), running 5+ containerized
+          microservices via Helm on Kubernetes with Argo CD GitOps CI/CD. Instrumented with
+          Prometheus/Grafana and ELK for full-stack observability. Hardened with auditd, key-only
+          SSH, Vault secrets management, and a Python/boto3 scanner for exposed security groups.
+        </p>
+        <a class="project-link" href="https://github.com/yeshwanthmoota" target="_blank" rel="noopener">view on github →</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <span class="project-icon">◆</span>
+          <h3>DDoS Simulation Homelab</h3>
+        </div>
+        <p class="project-stack">Docker Compose · iptables · tcpdump / Wireshark</p>
+        <p class="project-desc">
+          Containerized attack/defense lab built with Docker Compose. Analyzed volumetric traffic
+          signatures with tcpdump and Wireshark, then validated iptables rate-limiting rules to
+          keep the target service responsive under sustained attack.
+        </p>
+        <a class="project-link" href="https://github.com/yeshwanthmoota" target="_blank" rel="noopener">view on github →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <div class="section-inner">
+    <p class="section-eyebrow">$ cat education.yaml</p>
+    <div class="edu-row">
+      <div class="edu-item">
+        <h3>M.S. Cybersecurity</h3>
+        <p class="edu-org">University of North Carolina at Charlotte</p>
+        <p class="edu-meta">Jan 2024 — Dec 2025 · GPA 3.8/4.0</p>
+        <p class="edu-detail">Network Security · Cloud Security · Digital Forensics · Cryptography</p>
+      </div>
+      <div class="edu-item">
+        <h3>Certifications</h3>
+        <p class="edu-org">AWS Certified Solutions Architect – Associate</p>
+        <p class="edu-org">CompTIA Security+</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section section-contact">
+  <div class="section-inner">
+    <p class="section-eyebrow">$ ./contact.sh --send</p>
+    <h2 class="contact-title">Let's build something reliable.</h2>
+    <p class="contact-sub">Open to Linux, DevOps, Cloud, and DevSecOps roles. Reach out any time.</p>
+    <div class="contact-links">
+      <a href="mailto:ymootakoduru@gmail.com" class="contact-link">
+        <span class="contact-key">email</span>ymootakoduru@gmail.com
+      </a>
+      <a href="tel:+19803496248" class="contact-link">
+        <span class="contact-key">phone</span>+1 (980) 349-6248
+      </a>
+      <a href="https://www.linkedin.com/in/yeshwanth-mootakoduru-3629591a7/" target="_blank" rel="noopener" class="contact-link">
+        <span class="contact-key">linkedin</span>/in/yeshwanth-mootakoduru
+      </a>
+      <a href="https://github.com/yeshwanthmoota" target="_blank" rel="noopener" class="contact-link">
+        <span class="contact-key">github</span>@yeshwanthmoota
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Yeshwanth Mootakoduru · built with vanilla JS + three.js · <a href="https://github.com/yeshwanthmoota/personal_website" target="_blank" rel="noopener">source</a></p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
